@@ -9,69 +9,110 @@ function askQuestion() {
 }
 
 console.log("================ Basic Card ================")
-var firstPresident = new BasicCard(
-    "Who was the first president of the United States?", "George Washington");
+var HipHop = new BasicCard(
+    "When did Outkast win Album of the Year at the Grammy's?", "2004");
 
-// "Who was the first president of the United States?"
-console.log("--------------------firstPresident.front--------------------")
-console.log(firstPresident.front);
 
-// "George Washington"
-console.log("--------------------firstPresident.back--------------------")
-console.log(firstPresident.back);
+console.log("--------------------HipHop.front--------------------")
+console.log(HipHop.front);
+
+
+console.log("--------------------HopHop.back--------------------")
+console.log(HipHop.back);
+
 
 console.log("================ Cloze Card ================")
 
-var firstPresidentCloze = new ClozeCard(
-    "George Washington was the first president of the United States.", "George Washington");
-// "George Washington"
-console.log("--------------------firstPresidentCloze.cloze--------------------")
+var HipHopCloze = new ClozeCard(
+    "Outkast Won Album of the Year at the Grammy's in 2004", "2004");
 
-console.log(firstPresidentCloze.cloze);
+console.log("--------------------HipHopCloze.cloze--------------------")
 
-// " ... was the first president of the United States.
-console.log("--------------------firstPresidentCloze.partial--------------------")
-console.log(firstPresidentCloze.partial);
+console.log(HipHopCloze.cloze);
 
-// "George Washington was the first president of the United States.
-console.log("--------------------firstPresidentCloze.fullText--------------------")
-console.log(firstPresidentCloze.fullText);
 
-// Should throw or log an error because "oops" doesn't appear in "This doesn't work"
-console.log("--------------------firstPresidentCloze error test--------------------")
+console.log("--------------------HipHopCloze.partial--------------------")
+console.log(HipHopCloze.partial);
+
+
+console.log("--------------------HipHopCloze.fullText--------------------")
+console.log(HipHopCloze.fullText);
+
+
+console.log("--------------------HipHopCloze error test--------------------")
 var brokenCloze = new ClozeCard("This doesn't work", "oops");
 
 
 
+// ----------------------------New Item-----------------------------------------
+
+
 console.log("================ Basic Card ================")
-var secondPresident = new BasicCard(
-    "Who was the second president of the United States?", "John Adams");
+var Falcons = new BasicCard(
+    "Why did the Falcons lose the Superbowl in 2017?", "Poor 4th Quarter Defense");
 
-// "Who was the first president of the United States?"
-console.log("--------------------firstPresident.front--------------------")
-console.log(secondPresident.front);
 
-// "George Washington"
-console.log("--------------------firstPresident.back--------------------")
-console.log(secondPresident.back);
+console.log("--------------------Falcons.front--------------------")
+console.log(Falcons.front);
+
+
+console.log("--------------------Falcons.back--------------------")
+console.log(Falcons.back);
 
 console.log("================ Cloze Card ================")
 
-var secondPresidentCloze = new ClozeCard(
-    "john adams was the second president of the United States.", "john adams");
-// "George Washington"
-console.log("--------------------firstPresidentCloze.cloze--------------------")
+var FalconsCloze = new ClozeCard(
+    "Falcons Lost the Superbowl because of Poor 4th Quarter Defense", "Poor 4th Quarter Defense");
 
-console.log(secondPresidentCloze.cloze);
+console.log("--------------------FalconsCloze.cloze--------------------")
 
-// " ... was the first president of the United States.
-console.log("--------------------firstPresidentCloze.partial--------------------")
-console.log(secondPresidentCloze.partial);
+console.log(FalconsCloze.cloze);
 
-// "George Washington was the first president of the United States.
-console.log("--------------------firstPresidentCloze.fullText--------------------")
-console.log(secondPresidentCloze.fullText);
 
-// Should throw or log an error because "oops" doesn't appear in "This doesn't work"
-console.log("--------------------firstPresidentCloze error test--------------------")
+console.log("--------------------FalconsCloze.partial--------------------")
+console.log(FalconsCloze.partial);
+
+
+console.log("--------------------FalconsCloze.fullText--------------------")
+console.log(FalconsCloze.fullText);
+
+
+console.log("--------------------FalconsCloze error test--------------------")
+var brokenCloze = new ClozeCard("This doesn't work", "oops");
+
+
+// -----------------------------New Item-------------------------------------------
+
+
+console.log("================ Basic Card ================")
+var Malcolm = new BasicCard(
+    "Why is Malcolm Strong so dang cool?", "Because he is Danggit");
+
+
+console.log("--------------------Malcolm.front--------------------")
+console.log(Malcolm.front);
+
+
+console.log("--------------------Malcolm.back--------------------")
+console.log(Malcolm.back);
+
+console.log("================ Cloze Card ================")
+
+var MalcolmCloze = new ClozeCard(
+    "Malcolm Strong so dang cool Because he is Danggit", "Because he is Danggit");
+
+console.log("--------------------MalcolmCloze.cloze--------------------")
+
+console.log(MalcolmCloze.cloze);
+
+
+console.log("--------------------MalcolmCloze.partial--------------------")
+console.log(MalcolmCloze.partial);
+
+
+console.log("--------------------MalcolmCloze.fullText--------------------")
+console.log(MalcolmCloze.fullText);
+
+
+console.log("--------------------MalcolmCloze error test--------------------")
 var brokenCloze = new ClozeCard("This doesn't work", "oops");
